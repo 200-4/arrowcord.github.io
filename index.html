@@ -1,0 +1,627 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>Arrowcord software developers - App Landing Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/app-dev.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+            <!-- <img src="assets/images/newlogo.png" alt="Chain App Dev">-->
+            <span>Arrowcord</span>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#services">Services</a></li>
+              <li class="scroll-to-section"><a href="#about">About</a></li>
+              <li class="scroll-to-section"><a href="#pricing">Pricing</a></li>
+              <li class="scroll-to-section"><a href="#newsletter">Newsletter</a></li>
+              <li><div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Reach-Us now</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  
+  <div id="modal" class="popupContainer" style="display:none;">
+    <div class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+    </div>
+
+    <section class="popupBody">
+        <!-- Social Login -->
+        <div class="social_login">
+            <div class="">
+                <a href="#" class="social_box insta">          
+                    <span class="icon"><i class="fab fa-instagram"></i></span>
+                    <span class="icon_title">Connect with Instagram</span>
+
+                </a>
+
+                <a href="https://twitter.com/joshAbooki?t=v-bZavh95hnam5vxYT0PsQ&s=01" class="social_box twitter">
+                    <span class="icon"><i class="fab fa-twitter"></i></span>
+                    <span class="icon_title">Connect with twitter</span>
+                </a>
+                <a href="https://wa.me/256789732515" class="social_box whatsapp"  >
+                   	<span class="icon" ><i class="fab fa-whatsapp" ></i></span>
+                   	<span class="icon_title">Whatsapp</span>
+                </a>
+            </div>
+
+       <!--     <div class="centeredText">
+                <span>Or use your Email address</span>
+            </div>
+
+            <div class="action_btns">
+                <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+                <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+            </div>
+        </div>
+
+        <!-- Username & Password Login form 
+        <div class="user_login">
+            <form>
+                <label>Email / Username</label>
+                <input type="text" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="remember" type="checkbox" />
+                    <label for="remember">Remember me on this computer</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                </div>
+            </form>
+
+            <a href="#" class="forgot_password">Forgot password?</a>
+        </div>
+
+        <!-- Register Form 
+        <div class="user_register">
+            <form>
+                <label>Full Name</label>
+                <input type="text" />
+                <br />
+
+                <label>Email Address</label>
+                <input type="email" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="send_updates" type="checkbox" />
+                    <label for="send_updates">Send me occasional email updates</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                </div>
+            </form>
+        </div> -->
+    </section>
+</div>
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h3>Arrowcord Digital Systems </h3>
+                    <p>A modern design system for your business platform</p>
+                    <p>Arrowcord is based on fulfilling customers with  interests of starting business websites,mobile Apps, Digital marketing and <i>more</i></p>
+                  </div>
+                 <!-- <div class="col-lg-12">
+                    <div class="white-button first-button scroll-to-section">
+                      <a href="#contact">Free Quote <i class="fab fa-apple"></i></a>
+                    </div>
+                    <div class="white-button scroll-to-section">
+                      <a href="#contact">Free Quote <i class="fab fa-google-play"></i></a>
+                    </div>
+                  </div>-->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
+           			<p>
+           			 With the growing demand of internet today,most businesses are being run on digital platforms
+           			 It's for your business to appear online to cover and suit all your business ideas and goal
+           			 Develop a Website or Mobile App now at an incredibly cheaper cost
+           			</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h4>Amazing <em>Services </em> for you</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>If you need better online solutions for your business,please  <a rel="nofollow" href="https://wa.me/256789732515" target="_blank">Contact us</a>  If you need to make inquiries about more of services go to <a href="" target="_parent">our contact page</a> for more information.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" >
+     <div class="row" >
+       <div class="col-lg-3" >
+        <div class="more-service" >
+         <ul>
+          <li>
+           Search Engine Optimization
+          </li>
+          <li>
+           Digital Marketing services
+          </li>
+          <li>
+          Social media marketing
+          </li>
+          <li>
+           Pay per Click Marketing
+          </li>
+          <li>
+          Brand promotions
+          </li>
+          <li>
+          Display Marketing Services
+          </li>
+         </ul>
+        </div>
+       </div>
+     </div>
+    </div>
+    <div class="container">
+      <div class="row">  
+      <!--added section-->
+      <div class="col-lg-3">
+      <div class="service-item first-service-later">
+      <div class="icon"></div>
+      <h4>Build Stunning Websites </h4>
+      <p>Every Business needs a website to easily reach potential customers. Go internet</p>
+      <div class="text-button">
+      <a  href="preview.html">View Packages<i class="fa fa-arrow-right"></i></a>
+      </div>
+      </div>
+      </div>
+      
+      <!--end of added section-->
+      <!--added section-->
+      <div class="col-lg-3">
+      <div class="service-item first-service-retail">
+      <div class="icon"></div>
+      <h4>Mobile Apps</h4>
+      <p>Match Your Business with the growing demand of mobile Apps</p>
+      <div class="text-button">
+      <a  href="app.html">Learn more<i class="fa fa-arrow-right"></i></a>
+      </div>
+      </div>
+      </div>
+      
+      <!--end of added section-->
+        <div class="col-lg-3">
+          <div class="service-item first-service">
+            <div class="icon"></div>
+            <h4>Responsive E-com websites</h4>
+            <p>Nowdays clients find it easier to stock and order products from stores online.Dont be left out start your Ecommerce today</p>
+            <div class="text-button">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item second-service">
+            <div class="icon"></div>
+            <h4>Lite websites</h4>
+            <p>We develop super lite websites that run on every server</p>
+            <div class="text-button">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item third-service">
+            <div class="icon"></div>
+            <h4>Email marketing</h4>
+            <p>Email marketing a crucial approach to win new customers.Lets us help you</p>
+            <div class="text-button">
+            </div>
+          </div>
+        </div>
+
+        <!--////another section added-->
+        <div class="col-lg-3">
+        <div class="service-item third-service-last">
+        <div class="icon"></div>
+        <h4>Graphic design</h4>
+        <p>All categories of designs are offered,busines cards,flyers,company logos & <em>more</em></p>
+        <div class="text-button">
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item fourth-service">
+            <div class="icon"></div>
+            <h4>24/7 Hr Help &amp; Support</h4>
+            <p>Please feel free to  Anytime regarding some Issues</p>
+            <div class="text-button">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="section-heading">
+            <h4><em>What We Do</em> &amp; Who We Are</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>We basically deal in all sorts of designs.printing services are also available</p>
+              <span><p>Availabe in</p></span>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <ul>
+             <li><img src="assets/images/ios-logo.svg" ></li>
+             <li><img src="assets/images/microsoft.svg" ></li>
+             <li><img src="assets/images/python.svg" ></li>
+             <li><img src="assets/images/html5.svg" ></li>
+             <li><img src="assets/images/javascript.svg" ></li>
+           
+             <li><img src="assets/images/adobe.svg" ></li>
+             <li><img src="assets/images/photoshop.svg" ></li>
+             <li><img src="assets/images/adobe-premiere.svg" ></li>
+             <li><img src="assets/images/adobe-indesign.svg" ></li>
+             <li><img src="assets/images/after-effects.svg" ></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Maintance Problems</a></h4>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="https://wa.me/256789732515">24/7 Support &amp; Help</a></h4>
+              </div>
+            </div>
+            
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Co. Development</a></h4>
+                <p></p>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <p></p>
+              <div class="gradient-button">
+                <a href="#">Online payments Accepted</a>
+              </div>
+              <span>* Credit Cards Accepted*</span>
+              
+            </div>
+          </div>
+          <div id="payment" >
+          <ul>
+          <li>
+          <span>paypal<img src="assets/images/paypal.svg" ></span>
+          </li>
+          <span></span>
+          <li>
+          <span>Visa<img src="assets/images/visa.svg" alt="visa" ></span>
+          </li>
+          <li>
+          <span>Mastercard<img src="assets/images/mastercard-logo.svg" alt="visa" ></span>
+          </li>
+          <li>
+          <span>Airtel<img src="assets/images/airtel-money.png" alt="visa" ></span>
+          </li>
+          <li>
+          <span>MTN<img src="assets/images/mtn-mobile.png" alt="airtel" ></span>
+          </li>
+          </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-image">
+            <img src="assets/images/about-left-image.png" alt="">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div id="clients" class="the-clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Check On <em>Our Social media platform</em> See what <em>our clients</em> say</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>We have a very large community on social media,please follow and like us for more frquent updates.</p>
+            <img src="assets/images/heading-line-dec.png" alt="">
+
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                
+                <div class="col-lg-5">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“turn your business ideas into a startup
+                                  look like an <em>expert from the start”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/jj.png" alt="">
+                                <div class="right-content">
+                                  <h4>Kunihira Joshua Abooki</h4>
+                                  <span>CEO  ArrowCord</span>
+                                  <span><pre>"Senior Developer"</pre></span>
+                                   
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <!--skills adobe-->
+                    
+                    
+                    
+                  </ul>
+                </div>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div id="pricing" class="pricing-tables">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>We Have The Best <em>Prices</em> You Can Afford</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Be assured that the prices are negotiable depending on the type of commodity</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-regular">
+            <span class="price">$180.6</span>
+            <h4>Standard Plan website</h4>
+            <div class="icon">
+              <img src="assets/images/pricing-table-01.png" alt="">
+            </div>
+            <ul>
+              <li>Easy & Negotiable</li>
+              <li>5 GB of Storage</li>
+              <li >Life-time Support</li>
+              <li >Premium Add-Ons</li>
+              <li >Fastest Network</li>
+              <li> & More </li>
+            </ul>
+            <div class="border-button">
+              <a href="https://wa.me/256789732515">Purchase This Plan Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-pro">
+            <span class="price">$200</span>
+            <h4>Business Plan App</h4>
+            <div class="icon">
+              <img src="assets/images/pricing-table-01.png" alt="">
+            </div>
+            <ul>
+              <li>Easy & Negotiable</li>
+              <li>16GB TB of Storage</li>
+              <li>Life-time Support</li>
+             
+      
+            </ul>
+            <div class="border-button">
+              <a href="https://wa.me/256789732515">Purchase This Plan Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-regular">
+            <span class="price">$279</span>
+            <h4>Premium Plan App</h4>
+            <div class="icon">
+              <img src="assets/images/pricing-table-01.png" alt="">
+            </div>
+            <ul>
+              <li>Easy & Negotiable</li>
+              <li>32 GB of Storage</li>
+              <li>Life-time Support</li>
+              <li>Fastest Network</li>
+              <li>& More</li>
+            </ul>
+            <div class="border-button">
+              <a href="https://wa.me/256789732515">Purchase This Plan Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+
+  <!--added div--->
+  <div id="social-icons">
+  <div class="text-right">
+  <ul class="social-icons">
+  <li id="whatsapp"><a href="https://wa.me/256789732515" title="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+ 
+  <li id="linked"><a href="http://www.instagram.com/arrowcordstudios" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+
+  <li id="twitter"><a href="https://twitter.com/joshAbooki?t=v-bZavh95hnam5vxYT0PsQ&s=01" title="twitter" ><i class="fab fa-twitter"></i></a></li>
+
+  </ul>
+
+  </div>
+  </div>
+  </div> 
+  
+
+
+
+</div>
+<a href="#top" class="scroll-link top-link"  >
+<i class="fas fa-arrow-up" ></i>
+</a>
+<footer id="newsletter">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-6 offset-lg-3">
+    <div class="row">
+      
+      <div class="col-lg-3">
+        <div class="footer-widget">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <!--<li><a href="#">Testimonials</a></li>-->
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="footer-widget">
+          <h4>You may also Like This</h4>
+          <ul>
+            <li><a href="#">banners</a></li>
+            <li><a href="#">Business cards</a></li>
+            <li><a href="#">Flyers</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">On–line Ads</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">App Dev Team</a></li>
+            <li><a href="#">Digital Web</a></li>
+            <li><a href="#">Normal Apps</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="col-lg-3">
+        <div class="footer-widget">
+          <h4>Arrowcord</h4>
+          <div class="logo">
+           <!-- <img src="assets/images/white-logo.png" alt="">-->
+          </div>
+          <p>Arrowcord started way back in 2019</p>
+        </div>
+        <div class="copyright-text">
+        <p>Copyright © 2022 Arrowcord . All Rights Reserved. 
+        Designed By: AbookiJosh@arrowcordCo.</p>
+        <br>
+        <br>
+        <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+  
+</body>
+</html>
